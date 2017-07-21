@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardCornerRadius="5dp"
+
+
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/topNewsMobileBackground">
+            <ImageView
+                android:id="@+id/backImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/fab_margin"
+                android:background="@drawable/rectangle_transparent"
+                android:elevation="5dp"
+                android:alpha="0.5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newsTitle"
+                android:text="Новость для подписчиков здесь"
+                android:textSize="@dimen/topNewsTitleSizeMobile"
+                android:textColor="@color/subOnlyBackColor"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/backImage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/topNews_left_margin"
+                android:layout_margin="@dimen/fab_margin"
+
+                />
+        </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
